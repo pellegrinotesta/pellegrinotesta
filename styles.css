@@ -1,0 +1,267 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: 'Bangers', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  border: 3px solid #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.row {
+  padding: 10px;
+  background: #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.column {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+
+.bar {
+  width: 17px;
+  height: 3px;
+  background-color: #aaa;
+  margin: 3px 0;
+  display: block;
+}
+
+.content {
+  padding: 10px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#navbar a:hover{
+  color: #FCCC69;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+header {
+  text-align: center;
+  color: #FFF;
+}
+
+.hero {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-image: url("images/sfondo.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.hero h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.section {
+  padding: 5em 5em;
+  margin: 0 auto;
+  max-width: 900px;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.section h2 {
+  font-size: 40px;
+  margin-bottom: .7em;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.left {
+  text-align: left;
+}
+
+.icon-socialbar{
+  width: 100%;
+  text-align: right;
+  font-size: 25px;
+}
+
+.button {
+  background-color: #FCCC69;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  width: 200px;
+  font-family: "Bangers";
+}
+
+.thumb {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.thumb > img {
+  height: 200px;
+  width; 225px;
+}
+
+img {
+  margin: 0px auto;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+footer {
+  overflow: hidden;
+  background-color: #333;
+}
+
+footer a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #333;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  color: #FCCC69;
+  margin-bottom: 20px;
+}
+
+.fields {
+  font-size: 25px;
+  color: #FCCC69;
+}
+
+label, input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+label {
+  border: none;
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 580px) {
+  .section {
+    margin: 4em auto;
+    padding: 2.5em 3em;
+  }
+}
+
+
+@media only screen and (min-width: 750px) {
+  nav {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  nav li {
+    width: auto;
+    border-top: none;
+  }
+
+  nav li:nth-of-type(2n) {
+    border-left: none;
+  }
+}

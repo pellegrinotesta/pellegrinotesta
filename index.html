@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hi, I'm Rino</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <div id="navbar">
+        <a class="selected" href="#intro">Welcome</a>
+        <a href="#one">About me</a>
+        <a href="#two">Get in touch</a>
+      </div>
+      <section id="intro">
+        <div class="hero">
+        <h1><span id="carousel-words">こんにちは</span>
+        My name is <em>Pellegrino</em>
+        </h1>
+        <div class="thumb">
+          <img src="images/foto.jpeg" alt="">
+        </div>
+      </div>
+    </section>
+    </header>
+
+    <div class="page">
+      <section id="one" class="section section--gray left">
+        <h2><strong>About me</strong></h2>
+        <p>I graduated in <strong>Ancient Civilization and Archeology</strong> at <em>"L'Orientale"</em> in Naples.
+          Then, I obtained a master's degree in <strong>Historical and Oriental Sciences</strong> at the <em>Alma Mater</em> in Bologna.
+          My studies are focused on the Asian civilization, particularly on
+          <br>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="column left">
+                <span class="dot" style="background:#ED594A;"></span>
+                <span class="dot" style="background:#FDD800;"></span>
+                <span class="dot" style="background:#5AC05A;"></span>
+              </div>
+            </div>
+
+            <div class="content">
+              <ul>
+                <li>🇨🇳 <strong>Chinese</strong> archeology and history of art</li>
+                <br>
+                <li>🇯🇵 <strong>Japanese</strong> archeology and history of art</li>
+                <br>
+                <li>🇮🇳 <strong>Indian</strong> archeology and history of art</li>
+              </ul>
+            </div>
+          </div>
+
+         <br>
+         <br>
+         and to better understand their culture, I also learned Chinese and Japanese languages.
+         Despite this, I decided to change my path ☯︎ and challenge myself to change my life 💹.
+         <br>
+         <br>
+         I am a basketball fan and, in my spare time, I like writing, reading comics and manga
+       </p>
+      </section>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="form">
+      <section id="two" class="section section--gray left">
+        <h3>Get in touch</h3>
+        <p>If you want to talk to me or collaborate on a project, send me an email by clicking below.
+          Or, you can contact me directly through my social profiles.</p>
+        <br>
+        <br>
+        <div class="split style1">
+          <section>
+            <form method="post" onsubmit="return sendMail();">
+              <div class="fields">
+                <div class="field half">
+                  <label for="subject">Subject</label>
+                  <input type="text" name="subject" id="subject" />
+                </div>
+                <!--<div class="field half">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" />
+                </div>-->
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" placeholder="Write a message.." rows="5"></textarea>
+                </div>
+              </div>
+              <input type="button" class="button" value="Send Message" onclick="sendEmail()"/>
+            </form>
+          </section>
+      </section>
+    </div>
+
+    <footer>
+  <div class="icon-socialbar">
+    <a href="https://www.facebook.com/rino.testa.5/" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/rino_testa/" title="Instagram"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/pellegrino-testa-776096206/" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/pellegrinotesta" title="GitHub"><i class="fa fa-github"></i></a>
+  </div>
+</footer>
+
+
+
+    <script type="text/javascript" src="default.js"></script>
+
+  </body>
+</html>
